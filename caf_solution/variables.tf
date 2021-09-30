@@ -240,3 +240,29 @@ variable "propagate_launchpad_identities" {
 variable "random_strings" {
   default = {}
 }
+variable "servicebus_namespaces" {
+  default = {}
+}
+variable "servicebus_namespace_auth_rules" {
+  default = {}
+}
+variable "servicebus_queues" {
+  default = {}
+}
+variable "servicebus_queue_auth_rules" {
+  default = {}
+}
+variable "servicebus_topics" {
+  default = {}
+}
+variable "servicebus_topic_auth_rules" {
+  default = {}
+}
+variable "servicebus_subscriptions" {
+  default = {}
+}
+variable "servicebus_subscription_rules" {
+  default = {}
+}
+
+

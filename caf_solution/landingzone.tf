@@ -1,9 +1,9 @@
 module "solution" {
-  source  = "aztfmod/caf/azurerm"
-  version = "~>5.4.2"
+  // source  = "aztfmod/caf/azurerm"
+  // version = "~>5.4.2"
 
   # source = "git::https://github.com/aztfmod/terraform-azurerm-caf.git?ref=master"
-  # source = "../../aztfmod"
+  source = "../../aztfmod"
 
   azuread                               = local.azuread
   cloud                                 = local.cloud
@@ -37,6 +37,14 @@ module "solution" {
   resource_groups                       = var.resource_groups
   role_mapping                          = var.role_mapping
   security                              = local.security
+  servicebus_namespaces                 = var.servicebus_namespaces
+  servicebus_namespace_auth_rules       = var.servicebus_namespace_auth_rules
+  servicebus_queues                     = var.servicebus_queues
+  servicebus_queue_auth_rules           = var.servicebus_queue_auth_rules
+  servicebus_topics                     = var.servicebus_topics
+  servicebus_topic_auth_rules           = var.servicebus_topic_auth_rules
+  servicebus_subscriptions              = var.servicebus_subscriptions
+  servicebus_subscription_rules         = var.servicebus_subscription_rules
   shared_services                       = local.shared_services
   storage                               = local.storage
   storage_accounts                      = var.storage_accounts
