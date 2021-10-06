@@ -11,11 +11,3 @@ variable "notification_hubs" {
 variable "notification_hub_authorization_rules" {
   default = {}
 }
-
-variable "eventgrid_topics" {
-  default = {}
-}
-
-variable "eventgrid_domains" {
-  default = {}
-}
